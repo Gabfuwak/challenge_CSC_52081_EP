@@ -6,10 +6,7 @@ A reinforcement learning environment for optimizing turbofan engine maintenance.
 
 ### Step Size and Observations
 
-The environment uses a `step_size` parameter that determines how many flight observations are returned per `env.step()` call:
-
-- **step_size=10**: Each `env.step()` advances the simulation by 10 flights. Recommended to stay fixed for speed.  
-- **Returned observations**: A list of 'step_size' observation arrays, each representing sensor data from one flight
+- **Returned observations**: An array of [10,9] observation arrays, each representing 9 sensor data from over 10 flights
 - **Goal**: Learn optimal maintenance timing based on degradation patterns across multiple flights
 
 ### Actions and Objectives
@@ -35,9 +32,6 @@ Create a `.env` file in your project root for automatic configuration:
 SERVER_URL=http://rlchallenge.orailix.com
 USER_TOKEN=your_student_token
 
-# Environment settings
-STEP_SIZE=10 # advised to keep it fixed for speed
-MAX_STEPS_PER_EPISODE=700
 ```
 
 ### Basic Usage
