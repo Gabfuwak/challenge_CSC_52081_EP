@@ -4,6 +4,7 @@ A reinforcement learning environment for optimizing turbofan engine maintenance.
 
 
 ## Latest updates:
+- 25/02: added score, stabilized features, increased speed
 - 18/02: updated vectorized version and some function abstraction (v0.3)
 - 13/02: fixed some token access and np format in single_trajectory example
 
